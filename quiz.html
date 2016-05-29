@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html lang="et">
+	<head>
+	<meta charset="UTF-8" />
+		<title>TravtEST</title>
+	</head>
+
+	<!--siia tuleb head.html-->
+	
+	<body>
+	<form action="quiz.html" method="GET">
+		<h1>Vali Eesti omavalitsusüksused, kus oled viibinud</h1>
+		<br>
+		<img src="valdade_pindala.jpg" alt="Eesti omavalitsuste kaart" width="768" height="576">
+		<table>
+			<tr>
+				<caption>Harjumaal</caption> <!--seda tabelit peaks genereerima php-ga andmebaasist, just name, value, img atribuudid-->
+			</tr>
+			<tr>
+				<td><input type="checkbox" name="Harju maakond" value="Aegviidu vald"><label for="Aegviidu vald">Aegviidu vald </label></td>
+				<td><img src="aegviidu.jpg" alt="Aegviidu vald" width="30" height="20"></td> 
+			</tr>
+			<tr>
+				<td><input type="checkbox" name="Harju maakond" value="Anija vald"><label for="Anija vald">Anija vald </label></td>
+				<td><img src="aegviidu.jpg" alt="Aegviidu vald" width="30" height="20"></td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" name="Harju maakond" value="Anija vald"><label for="Anija vald">jätkub </label></td>
+				<td><img src="aegviidu.jpg" alt="Aegviidu vald" width="30" height="20"></td>
+			</tr>
+		</table>
+		<br> <br>
+		<table>
+			<tr>
+				<caption>Hiiumaal</caption> <!--seda tabelit peaks genereerima php-ga andmebaasist, just name, value, img atribuudid-->
+			</tr>
+			<tr>
+				<td><input type="checkbox" name="Hiiu Maakond" value="Emmaste vald"><label for="Emmaste vald">Emmaste vald</label></td> 
+			</tr>
+			<tr>
+				<td><input type="checkbox" name="Hiiu Maakond" value="Hiiu vald"><label for="Hiiu vald">Hiiu vald</label></td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" name="Hiiu Maakond" value="Käina vald"><label for="Käina vald">Käina vald</label></td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" name="Hiiu Maakond" value="Pühalepa vald"><label for="Pühalepa vald">Pühalepa vald</label></td>
+			</tr>
+		</table>
+		<br>
+		<button type="Submit">Arvuta, mitu % Eestist oled külastanud</button>
+	</form>
+	</body>
+	
+	<!--siia tuleb foot.html-->	
+	
+</html>
