@@ -1,55 +1,89 @@
 ﻿<!DOCTYPE html>
 <html lang="et">
 	<head>
-	<meta charset="UTF-8" />
-		<title>TravtEST</title>
+	<title>TravtEST</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<script type="text/javascript" src="js.js"></script>
 	</head>
 
+	<body onload='hideTotal()'>
+	<nav id="nav01"></nav> <!--menüü js-ga -->
 	<!--siia tuleb head.html-->
+	<!--pildi link veebist-->
 	
-	<body>
-	<form action="quiz.html" method="GET">
-		<h1>Vali Eesti omavalitsusüksused, kus oled viibinud</h1>
+	<img src="http://pood.regio.ee/sites/default/files/styles/product_detail_large/public/product_images/eesti_maak_linn_170x125mm_0.jpg?itok=o4lYqawb" alt="Eesti omavalitsuste kaart" width="768" height="526">
+	<h1>Vali need Eesti maakonnad, kus oled viibinud</h1>
+	<div id="wrap">
+	<form action="" id="calcform" onsubmit="return false;"> <!--link allpool javascript-coder.com-->
+		<fieldset>
+		
 		<br>
-		<img src="valdade_pindala.jpg" alt="Eesti omavalitsuste kaart" width="768" height="576">
+		
 		<table>
 			<tr>
-				<caption>Harjumaal</caption> <!--seda tabelit peaks genereerima php-ga andmebaasist, just name, value, img atribuudid-->
+				<caption>Eesti maakonnad</caption>
+			</tr>
+			<tr> <!--id, onclick on js jaoks-->
+				<td><label class='radiolabel'><input type="radio"  name="selectedcake" value="Round6" onclick="calculateTotal()" />Arvuti</label></td>	
 			</tr>
 			<tr>
-				<td><input type="checkbox" name="Harju maakond" value="Aegviidu vald"><label for="Aegviidu vald">Aegviidu vald </label></td>
-				<td><img src="aegviidu.jpg" alt="Aegviidu vald" width="30" height="20"></td> 
+				<td><label for="Harjumaa">Harjumaa </label></td>
+				<td><input type="checkbox" id="maa0" name="Harjumaa" value="9.92" onclick="calculateTotal()"/></td>
+				<td><label for="Hiiumaa">Hiiumaa </label></td>
+				<td><input type="checkbox" name="Hiiumaa" value="2.34" id="maa1" onclick="calculateTotal()"/></td>
+				<td><label for="Ida-Virumaa">Ida-Virumaa </label></td>
+				<td><input type="checkbox" name="Ida-Virumaa" value="7.7" id="maa2" onclick="calculateTotal()"/></td>
+				<td><label for="Jõgevamaa">Jõgevamaa </label></td>
+				<td><input type="checkbox" name="Jõgevamaa" value="5.96" id="maa3" onclick="calculateTotal()"/></td>
+				<td><label for="Järvamaa">Järvamaa </label></td>
+				<td><input type="checkbox" name="Järvamaa" value="5.63" id="maa4" onclick="calculateTotal()"/></td>
+				
 			</tr>
 			<tr>
-				<td><input type="checkbox" name="Harju maakond" value="Anija vald"><label for="Anija vald">Anija vald </label></td>
-				<td><img src="aegviidu.jpg" alt="Aegviidu vald" width="30" height="20"></td>
+				<td><label for="Lääne-Virumaa">Lääne-Virumaa </label></td>
+				<td><input type="checkbox" name="Lääne-Virumaa" value="8.3" id="maa5" onclick="calculateTotal()"/></td>
+				<td><label for="Läänemaa">Läänemaa </label></td>
+				<td><input type="checkbox" name="Läänemaa" value="5.45" id="maa6" onclick="calculateTotal()"/></td>
+				<td><label for="Põlvamaa">Põlvamaa </label></td>
+				<td><input type="checkbox" name="Põlvamaa" value="4.95" id="maa7" onclick="calculateTotal()"/></td>
+				<td><label for="Pärnumaa">Pärnumaa </label></td>
+				<td><input type="checkbox" name="Pärnumaa" value="11" id="maa8" onclick="calculateTotal()"/></td>
+				<td><label for="Raplamaa">Raplamaa </label></td>
+				<td><input type="checkbox" name="Raplamaa" value="6.82" id="maa9" onclick="calculateTotal()"/></td>
 			</tr>
 			<tr>
-				<td><input type="checkbox" name="Harju maakond" value="Anija vald"><label for="Anija vald">jätkub </label></td>
-				<td><img src="aegviidu.jpg" alt="Aegviidu vald" width="30" height="20"></td>
+				<td><label for="Saaremaa">Saaremaa </label></td>
+				<td><input type="checkbox" name="Saaremaa" value="6.69" id="maa10" onclick="calculateTotal()"/></td>
+				<td><label for="Tartumaa">Tartumaa </label></td>
+				<td><input type="checkbox" name="Tartumaa" value="7.07" id="maa11" onclick="calculateTotal()"/></td>
+				<td><label for="Valgamaa">Valgamaa </label></td>
+				<td><input type="checkbox" name="Valgamaa" value="4.68" id="maa12" onclick="calculateTotal()"/></td>
+				<td><label for="Viljandimaa">Viljandimaa </label></td>
+				<td><input type="checkbox" name="Viljandimaa" value="8.21" id="maa13" onclick="calculateTotal()"/></td>
+				<td><label for="Võrumaa">Võrumaa </label></td>
+				<td><input type="checkbox" name="Võrumaa" value="5.28" id="maa14" onclick="calculateTotal()"/></td>
 			</tr>
 		</table>
-		<br> <br>
-		<table>
-			<tr>
-				<caption>Hiiumaal</caption> <!--seda tabelit peaks genereerima php-ga andmebaasist, just name, value, img atribuudid-->
-			</tr>
-			<tr>
-				<td><input type="checkbox" name="Hiiu Maakond" value="Emmaste vald"><label for="Emmaste vald">Emmaste vald</label></td> 
-			</tr>
-			<tr>
-				<td><input type="checkbox" name="Hiiu Maakond" value="Hiiu vald"><label for="Hiiu vald">Hiiu vald</label></td>
-			</tr>
-			<tr>
-				<td><input type="checkbox" name="Hiiu Maakond" value="Käina vald"><label for="Käina vald">Käina vald</label></td>
-			</tr>
-			<tr>
-				<td><input type="checkbox" name="Hiiu Maakond" value="Pühalepa vald"><label for="Pühalepa vald">Pühalepa vald</label></td>
-			</tr>
-		</table>
+		
+		<br> <br> <!-- nimemuutus -->
+		<div id="totalPrice"></div>
 		<br>
-		<button type="Submit">Arvuta, mitu % Eestist oled külastanud</button>
+		<!--<button type="Submit">Arvuta, mitu % Eestist oled külastanud</button>-->
+		</fieldset>
 	</form>
+	</div>
+	<links>	
+	<h1>Abimaterjalid veebirakenduse koostamiseks</h1>
+	<a href="http://www.w3schools.com">w3schools</a>
+	<a href="http://www.w3schools.com/website/default.asp">veebi ehitamise juhend</a>
+	<a href="http://www.w3schools.com/css/css_table.asp">CSS</a>
+	<a href="http://www.javascript-coder.com/javascript-form/javascript-calculator-script.phtml">javascript calculator</a>
+	<footer id="foot01"></footer>
+	</links>
+	
+	
+	<script src="js.js"></script>
 	</body>
 	
 	<!--siia tuleb foot.html-->	
