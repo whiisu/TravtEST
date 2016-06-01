@@ -1,18 +1,3 @@
-
-
-document.getElementById("nav01").innerHTML =
-"<ul id='menu'>" +
-"<li><a href='main.html'>Esileht</a></li>" +
-"<li><a href='quiz.html'>TravtEST</a></li>" +
-"<li><a href='map.html'>Kaart</a></li>" +
-"<li><a href='abi.html'>Abiks</a></li>" +
-"<li><a href='login.html'>Logi sisse</a></li>" +
-"<li><a href='register.html'>Registreeri</a></li>" +
-"</ul>"; 
-
-document.getElementById("foot01").innerHTML =
-"<p>&copy;  " + new Date().getFullYear() + " Kaia Ernits. All rights reserved.</p>";
-
 // protsendiarvutus checkboxidega
 
 function harjuProtsent()
@@ -48,23 +33,118 @@ function idavProtsent()
 	}
 	return idavProtsent;
 }
-function jProtsent()
+function jgProtsent()
 {
-	var jProtsent=0;
+	var jgProtsent=0;
 	var theForm = document.forms["calcform"];
-	var jMaa = theForm.elements["Jõgevamaa"];
-	if(jMaa.checked==true)
+	var jgMaa = theForm.elements["Jgmaa"];
+	if(jgMaa.checked==true)
 	{
-		jProtsent=6;
+		jgProtsent=6;
 	}
-	return jProtsent;
+	return jgProtsent;
 }
-
+function jvProtsent()
+{
+	var jvProtsent=0;
+	var theForm = document.forms["calcform"];
+	var jvMaa = theForm.elements["Jvmaa"];
+	if(jvMaa.checked==true)
+	{
+		jvProtsent=6;
+	}
+	return jvProtsent;
+}
+function lvProtsent()
+{
+	var lvProtsent=0;
+	var theForm = document.forms["calcform"];
+	var lvMaa = theForm.elements["LVmaa"];
+	if(lvMaa.checked==true)
+	{
+		lvProtsent=8;
+	}
+	return lvProtsent;
+}
+function lProtsent(){
+	var lProtsent=0;
+	var theForm = document.forms["calcform"];
+	var lMaa = theForm.elements["Lmaa"];
+	if(lMaa.checked==true)
+	{lProtsent=5;}
+	return lProtsent;
+}
+function pProtsent(){
+	var pProtsent=0;
+	var theForm = document.forms["calcform"];
+	var pMaa = theForm.elements["Pmaa"];
+	if(pMaa.checked==true)
+	{pProtsent=5;}
+	return pProtsent;
+}
+function puProtsent(){
+	var puProtsent=0;
+	var theForm = document.forms["calcform"];
+	var puMaa = theForm.elements["Pumaa"];
+	if(puMaa.checked==true)
+	{puProtsent=11;}
+	return puProtsent;
+}
+function rProtsent(){
+	var rProtsent=0;
+	var theForm = document.forms["calcform"];
+	var rMaa = theForm.elements["Rmaa"];
+	if(rMaa.checked==true)
+	{rProtsent=7;}
+	return rProtsent;
+}
+function sProtsent(){
+	var sProtsent=0;
+	var theForm = document.forms["calcform"];
+	var sMaa = theForm.elements["Smaa"];
+	if(sMaa.checked==true)
+	{sProtsent=7;}
+	return sProtsent;
+}
+function tProtsent(){
+	var tProtsent=0;
+	var theForm = document.forms["calcform"];
+	var tMaa = theForm.elements["Tmaa"];
+	if(tMaa.checked==true)
+	{tProtsent=7;}
+	return tProtsent;
+}
+function vaProtsent(){
+	var vaProtsent=0;
+	var theForm = document.forms["calcform"];
+	var vaMaa = theForm.elements["Vamaa"];
+	if(vaMaa.checked==true)
+	{vaProtsent=5;}
+	return vaProtsent;
+}
+function viProtsent(){
+	var viProtsent=0;
+	var theForm = document.forms["calcform"];
+	var viMaa = theForm.elements["Vimaa"];
+	if(viMaa.checked==true)
+	{viProtsent=8;}
+	return viProtsent;
+}
+function vuProtsent(){
+	var vuProtsent=0;
+	var theForm = document.forms["calcform"];
+	var vuMaa = theForm.elements["Vumaa"];
+	if(vuMaa.checked==true)
+	{vuProtsent=5;}
+	return vuProtsent;
+}
+	
+	
 function calculateTotal()
 {
 	var totalProtsent = 0;
 	var notVisited = 100;
-	var totalProtsent = harjuProtsent()+ hiiuProtsent()+ idavProtsent();
+	var totalProtsent = harjuProtsent()+ hiiuProtsent()+ idavProtsent()+ jgProtsent()+ jvProtsent()+ lvProtsent()+ lProtsent()+ pProtsent()+ puProtsent()+ rProtsent()+ sProtsent()+ tProtsent()+ vaProtsent()+ viProtsent()+ vuProtsent();
 	var notVisited = 100-totalProtsent;
 	//document.getElementById("totalPrice").innerHTML = "Oled külastanud kogu Eestist "+totalProtsent+" protsenti!";
 
@@ -103,3 +183,16 @@ function calculateTotal(){
    		divobj.style.display='block';
     	divobj.innerHTML = "Oled viibinud kogu Eestist "+totalProtsent+" %! Avastamata ala on veel "+notVisited+" %";
 }
+
+function jProtsent()
+{
+	var jProtsent=0;
+	var theForm = document.forms["calcform"];
+	var jMaa = theForm.elements["Jõgevamaa"];
+	if(jMaa.checked==true)
+	{
+		jProtsent=6;
+	}
+	return jProtsent;
+}
+*/

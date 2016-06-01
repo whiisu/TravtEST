@@ -13,19 +13,19 @@
 	<!--pildi link veebist-->
 	
 	<img src="http://pood.regio.ee/sites/default/files/styles/product_detail_large/public/product_images/eesti_maak_linn_170x125mm_0.jpg?itok=o4lYqawb" alt="Eesti omavalitsuste kaart" width="768" height="526">
-	<h1>Vali need Eesti maakonnad, kus oled viibinud</h1>
+	<h1>Eesti Maakonnad</h1>
 	<div id="wrap">
 	<form action="" id="calcform" onsubmit="return false;"> <!--link allpool javascript-coder.com-->
 		<fieldset>
 		
 		<br>
 		
-		<table>
+		<table id="table">
 			<tr>
-				<caption>Eesti maakonnad</caption>
+				<caption>Vali need Eesti maakonnad, kus oled viibinud</caption>
 			</tr>
-			<tr> <!--id, onclick on js jaoks-->
-				<td><label class='radiolabel'><input type="radio"  name="selectedcake" value="Round6" onclick="calculateTotal()" />Arvuti</label></td>	
+			<tr> <!--name, onclick on js jaoks-->
+				<td></td>	
 			</tr>
 			<tr>
 				<td><label for="Harjumaa">Harjumaa </label></td>
@@ -34,56 +34,52 @@
 				<td><input type="checkbox" name="Hiiumaa" value="2.34" id="maa1" onclick="calculateTotal()"/></td>
 				<td><label for="Ida-Virumaa">Ida-Virumaa </label></td>
 				<td><input type="checkbox" name="Ida-Virumaa" value="7.7" id="maa2" onclick="calculateTotal()"/></td>
-				<td><label for="Jõgevamaa">Jõgevamaa </label></td>
-				<td><input type="checkbox" name="Jõgevamaa" value="5.96" id="maa3" onclick="calculateTotal()"/></td>
-				<td><label for="Järvamaa">Järvamaa </label></td>
-				<td><input type="checkbox" name="Järvamaa" value="5.63" id="maa4" onclick="calculateTotal()"/></td>
+				<td><label for="Jgmaa">Jõgevamaa </label></td>
+				<td><input type="checkbox" name="Jgmaa" value="5.96" id="maa3" onclick="calculateTotal()"/></td>
+				<td><label for="Jvmaa">Järvamaa </label></td>
+				<td><input type="checkbox" name="Jvmaa" value="5.63" id="maa4" onclick="calculateTotal()"/></td>
 				
 			</tr>
 			<tr>
-				<td><label for="Lääne-Virumaa">Lääne-Virumaa </label></td>
-				<td><input type="checkbox" name="Lääne-Virumaa" value="8.3" id="maa5" onclick="calculateTotal()"/></td>
-				<td><label for="Läänemaa">Läänemaa </label></td>
-				<td><input type="checkbox" name="Läänemaa" value="5.45" id="maa6" onclick="calculateTotal()"/></td>
-				<td><label for="Põlvamaa">Põlvamaa </label></td>
-				<td><input type="checkbox" name="Põlvamaa" value="4.95" id="maa7" onclick="calculateTotal()"/></td>
-				<td><label for="Pärnumaa">Pärnumaa </label></td>
-				<td><input type="checkbox" name="Pärnumaa" value="11" id="maa8" onclick="calculateTotal()"/></td>
-				<td><label for="Raplamaa">Raplamaa </label></td>
-				<td><input type="checkbox" name="Raplamaa" value="6.82" id="maa9" onclick="calculateTotal()"/></td>
+				<td><label for="LVmaa">Lääne-Virumaa </label></td>
+				<td><input type="checkbox" name="LVmaa" value="8.3" id="maa5" onclick="calculateTotal()"/></td>
+				<td><label for="Lmaa">Läänemaa </label></td>
+				<td><input type="checkbox" name="Lmaa" value="5.45" id="maa6" onclick="calculateTotal()"/></td>
+				<td><label for="Pmaa">Põlvamaa </label></td>
+				<td><input type="checkbox" name="Pmaa" value="4.95" id="maa7" onclick="calculateTotal()"/></td>
+				<td><label for="Pumaa">Pärnumaa </label></td>
+				<td><input type="checkbox" name="Pumaa" value="11" id="maa8" onclick="calculateTotal()"/></td>
+				<td><label for="Rmaa">Raplamaa </label></td>
+				<td><input type="checkbox" name="Rmaa" value="6.82" id="maa9" onclick="calculateTotal()"/></td>
 			</tr>
 			<tr>
-				<td><label for="Saaremaa">Saaremaa </label></td>
-				<td><input type="checkbox" name="Saaremaa" value="6.69" id="maa10" onclick="calculateTotal()"/></td>
-				<td><label for="Tartumaa">Tartumaa </label></td>
-				<td><input type="checkbox" name="Tartumaa" value="7.07" id="maa11" onclick="calculateTotal()"/></td>
+				<td><label for="Smaa">Saaremaa </label></td>
+				<td><input type="checkbox" name="Smaa" value="6.69" id="maa10" onclick="calculateTotal()"/></td>
+				<td><label for="Tmaa">Tartumaa </label></td>
+				<td><input type="checkbox" name="Tmaa" value="7.07" id="maa11" onclick="calculateTotal()"/></td>
 				<td><label for="Valgamaa">Valgamaa </label></td>
-				<td><input type="checkbox" name="Valgamaa" value="4.68" id="maa12" onclick="calculateTotal()"/></td>
-				<td><label for="Viljandimaa">Viljandimaa </label></td>
-				<td><input type="checkbox" name="Viljandimaa" value="8.21" id="maa13" onclick="calculateTotal()"/></td>
-				<td><label for="Võrumaa">Võrumaa </label></td>
-				<td><input type="checkbox" name="Võrumaa" value="5.28" id="maa14" onclick="calculateTotal()"/></td>
+				<td><input type="checkbox" name="Vamaa" value="4.68" id="maa12" onclick="calculateTotal()"/></td>
+				<td><label for="Vimaa">Viljandimaa </label></td>
+				<td><input type="checkbox" name="Vimaa" value="8.21" id="maa13" onclick="calculateTotal()"/></td>
+				<td><label for="Vumaa">Võrumaa </label></td>
+				<td><input type="checkbox" name="Vumaa" value="5.28" id="maa14" onclick="calculateTotal()"/></td>
 			</tr>
 		</table>
 		
 		<br> <br> <!-- nimemuutus -->
 		<div id="totalPrice"></div>
 		<br>
-		<!--<button type="Submit">Arvuta, mitu % Eestist oled külastanud</button>-->
+		<button type="Submit">Salvesta tulemus</button>
 		</fieldset>
 	</form>
 	</div>
 	<links>	
-	<h1>Abimaterjalid veebirakenduse koostamiseks</h1>
-	<a href="http://www.w3schools.com">w3schools</a>
-	<a href="http://www.w3schools.com/website/default.asp">veebi ehitamise juhend</a>
-	<a href="http://www.w3schools.com/css/css_table.asp">CSS</a>
-	<a href="http://www.javascript-coder.com/javascript-form/javascript-calculator-script.phtml">javascript calculator</a>
+	
 	<footer id="foot01"></footer>
 	</links>
 	
-	
-	<script src="js.js"></script>
+	<script src="menu.js"></script>
+	<script type="text/javascript" src="js.js"></script>
 	</body>
 	
 	<!--siia tuleb foot.html-->	
