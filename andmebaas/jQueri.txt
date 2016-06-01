@@ -1,0 +1,14 @@
+serveris: 
+
+enos.itcollege.ee/phpmyadmin 
+user:test
+password:t3st3r123
+
+Uus tabel: 
+
+CREATE TABLE kaernits_travtuser (
+	id integer PRIMARY KEY auto_increment,
+    username varchar(50),
+    password varchar(50)
+    );
+    

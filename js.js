@@ -148,7 +148,7 @@ function calculateTotal()
 	var notVisited = 100-totalProtsent;
 	//document.getElementById("totalPrice").innerHTML = "Oled külastanud kogu Eestist "+totalProtsent+" protsenti!";
 
-	var divobj = document.getElementById('totalPrice');
+	var divobj = document.getElementById('total');
    		divobj.style.display='block';
     	divobj.innerHTML = "Oled viibinud kogu Eestist "+totalProtsent+" protsenti! Avastamata ala on veel "+notVisited+" protsenti";
 }
@@ -156,7 +156,7 @@ function calculateTotal()
 
 function hideTotal()
 {
-    var divobj = document.getElementById('totalPrice');
+    var divobj = document.getElementById('total');
     divobj.style.display='none';
 }
 
@@ -182,17 +182,5 @@ function calculateTotal(){
 	var divobj = document.getElementById('totalPrice');
    		divobj.style.display='block';
     	divobj.innerHTML = "Oled viibinud kogu Eestist "+totalProtsent+" %! Avastamata ala on veel "+notVisited+" %";
-}
-
-function jProtsent()
-{
-	var jProtsent=0;
-	var theForm = document.forms["calcform"];
-	var jMaa = theForm.elements["Jõgevamaa"];
-	if(jMaa.checked==true)
-	{
-		jProtsent=6;
-	}
-	return jProtsent;
 }
 */
