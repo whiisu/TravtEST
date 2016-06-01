@@ -6,9 +6,11 @@ Kokkuvõttena saaksid teada, kui suur protsent Eestist on sul juba külastatud j
 Projekti idee ei ole täielikult realiseerinud - on veel plaanis jõuda sinnamaani, kus saaks interaktiivsel kaardil klikkides validaka väiksemaid Eesti omavalitsusüksusi.
 
 #Kasutusjuhend
--Esmalt tuleks käivitada main.html vaade ja lugeda läbi juhised.
--Kui juhiseid ei ole aega läbi lugeda, siis liigu kohe register.html lehele.
--Mäng ise asub TravtEST.html dokumendis oleva kaardi all.
+Esmalt tuleks käivitada main.html vaade ja lugeda läbi juhised.
+
+Kui juhiseid ei ole aega läbi lugeda, siis liigu kohe register.html lehele.
+
+Mäng ise asub TravtEST.html dokumendis oleva kaardi all.
 
 Soovin edu 100% saavutamisel!
 
